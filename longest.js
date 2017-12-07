@@ -12,8 +12,8 @@ function longest(s1, s2) {
       unique2.push(s2[i]);
   };
 
-  final1 = unique1.join('');
-  final2 = unique2.join('');
+  final1 = unique1.sort().join('');
+  final2 = unique2.sort().join('');
 
   if (unique1.length > unique2.length)
     return unique1;
